@@ -13,11 +13,11 @@ rust-version = "1.67.0"
 [dependencies]
 faer = { version = "0.24.0", default-features = false }
 nalgebra = { version = "0.34", default-features = false, optional = true }
-ndarray = { version = "0.16", default-features = false, optional = true }
+ndarray = { version = "0.17.2", default-features = false, optional = true }
 num-complex = { version = "0.4.5", default-features = false }
 polars = { version = "0.40", features = ["lazy"], optional = true }
-numpy = { version="0.26.0", default-features = false, optional = true }
-pyo3 = { version="0.26", default-features = false, optional = true }
+numpy = { version = "0.26.0", default-features = false, optional = true }
+pyo3 = { version = "0.26", default-features = false, optional = true }
 
 [dev-dependencies]
 nalgebra = { version = "0.34" }
