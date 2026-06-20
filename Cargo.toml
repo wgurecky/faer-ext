@@ -1,6 +1,6 @@
 [package]
 name = "faer-ext"
-version = "0.7.1"
+version = "0.8.0"
 edition = "2021"
 authors = ["sarah <>"]
 description = "faer API for interoperability with external libraries"
