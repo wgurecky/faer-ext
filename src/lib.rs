@@ -616,9 +616,9 @@ mod tests {
 		use numpy::{PyArray1, PyArrayMethods, PyReadonlyArray1, PyReadonlyArray2, pyarray};
 		use pyo3::prelude::*;
 		use pyo3::{Bound, Python};
-		pyo3::prepare_freethreaded_python();
+		Python::initialize();
 
-		Python::with_gil(|py| {
+		Python::attach(|py| {
 			let arr_1 = PyArray1::from_vec(py, vec![1., 0., 1., 0.]);
 			let py_array1: PyReadonlyArray1<f64> = arr_1.readonly();
 			let expected_f64: Mat<f64> = mat![[1., 0., 1., 0.]];
